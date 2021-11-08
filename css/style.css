@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #ebebeb;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo{
+    /* background-color: chocolate; */
+    width: 1300px;
+    height: inherit;
+
+}
+
+#imgLogo{
+    /* background-color: lightgreen; */
+    width: 70px;
+    height: 40px;
+    margin-left: 50px;
+    margin-top: 20px;
+    float: left;
+}
+#imagemLogo{
+    width: inherit;
+    height: inherit;
+
+}
+
+#caixaPesquisa{
+    /* background-color: red; */
+    width: 1000px;
+    height: 45px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+
+}
+
+.options{
+    background-color: chocolate;
+    width: 100px;
+    height: 100px;
+}
+
+#campoPesquisa{
+    /* background-color: khaki; */
+    width: 25px;
+    height: 25px;
+    margin-left: 25px;
+    margin-top: 15px;
+    float: left;
+    /* background-color: yellow;
+    color: yellow; */
+}
+#imagemPesquisa{
+    width: inherit;
+    height: inherit;
+    background-color: #ebebeb;
+}
+
+#inputPesquisa{
+    width: 700px;
+    height: 40px;
+    /* background-color: lightskyblue; */
+    margin-left: 30px;
+    float: left;
+    margin-top: 8px;
+
+}
+
+#pesquisa{
+    height: inherit;
+    width: inherit;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    
+}
