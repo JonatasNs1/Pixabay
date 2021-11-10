@@ -41,7 +41,7 @@ const pesquisar =async(evento) =>{
         novoDiv.classList.add("ss") 
         novoDiv.innerHTML = 
         ` <div class="imagem-container">
-        <img class= "imgPreview" src="${item.previewURL}">
+        <img class= "imgPreview" src="${item.webformatURL}">
     
        </div>  
        <div>
