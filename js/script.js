@@ -40,24 +40,31 @@ const pesquisar =async(evento) =>{
         const novoDiv = document.createElement("div")
         novoDiv.classList.add("ss") 
         novoDiv.innerHTML = 
-        ` <div class="imagem-container">
-        <img class= "imgPreview" src="${item.webformatURL}">
-    
+        ` 
+        <div class="imagem-container">
+            <img class= "imgPreview" src="${item.webformatURL}">
        </div>  
-       <div>
-       <div class="tags">
-    
-       ${item.tags}
-       
+
+       <div class="caixaTags">
+         <div class="tags">
+            ${item.tags}
+            </div>
        </div>
-       <div class="likes">
-       <div>
-        <img class="imgLikes" src="img/like.png">
-       </div>
-          ${item.likes}
-        
-       </div>
-       <div class="comments">${item.comments} </div>
+
+       <div class="caixa"> 
+            <div class="imagemLike">
+                  <img class="imagemLike" src="img/like.png">
+            </div>
+            <div class="like"> 
+                    ${item.likes}
+            </div> 
+            
+            <div class="imagemComments"> 
+                <img class="imagemLike" src="img/comments.png">
+            </div>
+            <div class="comments">
+                     ${item.comments}
+            </div> 
        </div>
     `
          galeria.appendChild(novoDiv)
