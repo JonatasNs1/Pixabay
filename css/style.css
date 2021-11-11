@@ -203,3 +203,7 @@ height: 70px;
     margin-left: 12px;
     float: left;
 }
+
+#imagemPesquisa:hover{
+    cursor: pointer;
+}
