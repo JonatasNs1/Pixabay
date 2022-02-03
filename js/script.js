@@ -11,9 +11,11 @@ const limparElementos = (elemento) =>{ // 12 passo - criar uma funcao para limpa
 
 const pesquisar =async(evento) =>{
     if(evento.key == 'Enter' || evento.type == 'click'){
+
         const pesquisa = document.getElementById('pesquisa').value;
        
-        // console.log(pesquisa);
+        if(pesquisa){
+             // console.log(pesquisa);
         const url = `https://pixabay.com/api/?key=24217094-d3bf941cb7e41a3f57527f311&q=${pesquisa}&image_type=photo`;
         // console.log(url);
         const dados = await fetch(url); 
@@ -24,6 +26,10 @@ const pesquisar =async(evento) =>{
         limparElementos(document.querySelector('.galeria'));
         //  console.log(pesquisar);
          carregarGaleria(pesquisar.hits); 
+        }else{
+            alert("Digite algo");
+        }
+       
         
         
     }
